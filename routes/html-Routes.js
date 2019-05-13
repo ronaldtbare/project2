@@ -5,14 +5,14 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 module.exports = function(app) {
   app.get("/", function(req, res) {
     if (req.user) {
-      res.redirect("/serviceboard");
+      res.redirect("/servboard");
     }
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
 
   app.get("/login", function(req, res) {
     if (req.user) {
-      res.redirect("/serviceboard");
+      res.redirect("/servboard");
     }
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
@@ -21,7 +21,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 
-  app.get("/serviceboard", function(req, res) {
+  app.get("/servboard", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/servboard.html"));
   });
 
