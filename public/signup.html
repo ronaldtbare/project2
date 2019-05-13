@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>ServUs Nashville|Board</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+
+  <!-- Linking CSS -->
+<link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <img src="./img/logo.png" alt="logo">
+      </div>
+      <!-- <div>
+   <h3>“You make a living by what you get. You make a life by what you give.”</h3>
+      </div> -->
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2>Sign Up Form</h2>
+        <form class="signup">
+          <!-- Name -->
+          <div class="form-group">
+            <label class="inputs" for="exampleInputName">Name</label>
+            <input type="name" class="form-control" id="name-input" placeholder="Name">
+          </div>
+          <!-- Email Address -->
+          <div class="form-group">
+            <label class="inputs" for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email-input" placeholder="Email">
+          </div>
+          <!-- Password -->
+          <div class="form-group">
+            <label class="inputs" for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="password-input" placeholder="Password">
+          </div>
+          <!-- Skills -->
+           <label class="inputs" for="skills">Skills:</label>
+            <select name="skills" id="skillsinput">
+              <option value="">Select an option</option>
+              <option value="Teaching">Teaching</option>
+              <option value="Food Service">Food Service</option>
+              <option value="Contracting">Contracting</option>
+              <option value="Health">Health Care</option>
+                <option value="Artistic">Artistic</option>
+              <option value="Any">Any</option>
+            </select>
+            <br><br>
+
+             <!-- Availability -->
+           <label class="inputs" for="availability">Availability:</label>
+            <select name="availability" id="availabilityinput">
+              <option value="">Select an option</option>
+              <option value="Weekends">Weekends</option>
+              <option value="week-day">Week day</option>
+            </select>
+            <br><br>
+
+          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> <span class="msg"></span>
+          </div>
+          <button type="submit" class="btn btn-default">Sign Up</button>
+        </form>
+        <br />
+        <p class="inputs">Or log in <a href="/login">here</a></p>
+      </div>
+    </div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/signup.js"></script>
+
+</body>
+
+</html>

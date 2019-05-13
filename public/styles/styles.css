@@ -1,0 +1,29 @@
+.list-group-item {
+  line-height: 2.5;
+}
+
+#form1 {
+  display:none;
+  
+  }
+
+ .jumbotron-fluid{
+  background-image: url(../img/active-blue-charity-1353351.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+}
+label{
+  font-size: 20px;
+}
+input{
+  margin-right: 5px;
+}
+  }
+
+/* Welcoming part of the navbar */
+#welcome {
+   float: right;
+    color:#007bff;
+}
+
