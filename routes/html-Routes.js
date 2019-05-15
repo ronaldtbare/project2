@@ -12,7 +12,7 @@ module.exports = function(app) {
 
   app.get("/login", function(req, res) {
     if (req.user) {
-      res.redirect("/servboard");
+      res.redirect("/serviceboard");
     }
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
@@ -21,7 +21,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 
-  app.get("/servboard", function(req, res) {
+  app.get("/serviceboard", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/servboard.html"));
   });
 
