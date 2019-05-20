@@ -3,12 +3,7 @@ $(document).ready(function() {
     e.preventDefault();
     var avail = $("input[name='opt2radio']:checked").val();
     var searchSkill = $("input[name='optradio']:checked").val();
-    if (searchSkill) {
-      alert("Your search term is " + searchSkill);
-    }
-    if (avail) {
-      alert("Your availability is " + avail);
-    }
+    
     $.get(`/api/skillssearch/${searchSkill}`).then(function(data) {
       for (var i = 0; i <= data.length; i++){
         $("#peopleDiv").append(`<div class="col-sm">
